@@ -11,4 +11,8 @@ func main() {
 	fmt.Println(answer)
 	answer2 := algo.FindFactorialIterative(10)
 	fmt.Println(answer2)
+	answer3 := algo.FibonnaciIterative(20)
+	fmt.Println(answer3)
+	answer4 := algo.FibonnaciRecursive(20)
+	fmt.Println(answer4)
 }

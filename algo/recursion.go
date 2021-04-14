@@ -17,3 +17,27 @@ func FindFactorialIterative(number int) int {
 	}
 	return answer
 }
+
+//FibonnaciIterative finds the fibonnacci of a given index by iterating
+func FibonnaciIterative(index int) int {
+	if index < 2 {
+		return index
+	}
+	num1 := 0
+	num2 := 1
+	var answer int
+	for index > 1 {
+		answer = num1 + num2
+		num1, num2 = num2, answer
+		index--
+	}
+	return answer
+}
+
+//FibonnaciRecursive finds the fibonnacci of a given index recursivly
+func FibonnaciRecursive(index int) int {
+	if index < 2 {
+		return index
+	}
+	return FibonnaciRecursive(index-1) + FibonnaciRecursive(index-2)
+}
