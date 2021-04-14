@@ -17,4 +17,6 @@ func main() {
 	fmt.Println(answer4)
 	answer5 := algo.ReverseStringIterative("Hi Louis")
 	fmt.Println(answer5)
+	answer6 := algo.ReverseStringRecursive("Hi Louis")
+	fmt.Println(answer6)
 }

@@ -51,3 +51,12 @@ func ReverseStringIterative(sentence string) string {
 	}
 	return string(answer)
 }
+
+//ReverseStringRecursive reverses a given string by recursion
+func ReverseStringRecursive(sentence string) string {
+	sb := []byte(sentence)
+	if len(sb) == 0 {
+		return ""
+	}
+	return string(sb[len(sb)-1]) + ReverseStringRecursive(string(sb[:len(sb)-1]))
+}
