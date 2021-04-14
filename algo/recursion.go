@@ -7,3 +7,13 @@ func FindFactorialRecursive(number int) int {
 	}
 	return number * FindFactorialRecursive(number-1)
 }
+
+//FindFactorialIterative finds the factorial of a given number by iterating
+func FindFactorialIterative(number int) int {
+	answer := number
+	for number > 1 {
+		number--
+		answer = answer * number
+	}
+	return answer
+}
