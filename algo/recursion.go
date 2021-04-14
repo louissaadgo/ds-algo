@@ -41,3 +41,13 @@ func FibonnaciRecursive(index int) int {
 	}
 	return FibonnaciRecursive(index-1) + FibonnaciRecursive(index-2)
 }
+
+//ReverseStringIterative reserses a given string by iterating
+func ReverseStringIterative(sentence string) string {
+	sb := []byte(sentence)
+	var answer []byte
+	for i := len(sb) - 1; i >= 0; i-- {
+		answer = append(answer, sb[i])
+	}
+	return string(answer)
+}
