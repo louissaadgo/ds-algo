@@ -19,4 +19,6 @@ func main() {
 	fmt.Println(answer5)
 	answer6 := algo.ReverseStringRecursive("Hi Louis")
 	fmt.Println(answer6)
+	answer7 := algo.BubbleSort([]int{1, 9, 7, 4, 2, 0, 7, 8, 55, 45, 1, 23})
+	fmt.Println(answer7)
 }
